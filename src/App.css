@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ==== common css start ==== */
+*{
+    margin    : 0;
+    padding   : 0;
+    outline   : 0;
+    box-sizing: border-box;
+}
+a{
+    display         : inline-block;
+    text-decoration : none;
+}
+ul , li{
+    list-style : none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin  : 0;
+    padding : 0;
+}
+:root{
+    --nunito:"Nunito Sans", sans-serif;
+    --poppins:"Poppins", sans-serif;
+
+
+}
+body{
+    width      : 100%;
+    min-height : 100vh;
+    background : #FFFFFF;
+    color      : black;
+   
+}
+/* ======= common css end ===== */
+/* ======= navbar css start === */
+.navbar{
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+}
+.logo{
+    margin-top : 20px;
+}
+.menu ul, .book ul{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 30px;
+    margin-top      : 20px;
+}
+.menu ul li a, .book ul li a{
+    font-size   : 16px;
+    font-weight : 600;
+    font-family : var(--nunito);
+    color       : #000;
+
+}
+.menu ul li a{
+    position : relative;
+}
+.menu ul li a::after{
+    content: '';
+    width        : 100%;
+    height       : 2px;
+    background   : #EF8D21;
+    border-radius: 5px;
+    position     : absolute;
+    top          : 100%;
+    left         : 0;
+    transform    : scale(0);
+    transition   : all linear .3s;
+}
+.menu ul li a:hover::after{
+    transform    : scale(1);
+}
+.book ul li a{
+    padding       : 12px 17px;
+    background    : #fff;
+    border        : none;
+    border-radius : 100px;
+    transition    : all linear .3s;
+}
+.book ul li a:hover{
+    padding    : 12px 17px;
+    background : #EF8D21;
+    color      : #FFFFFF;
+    font-weight: 700;
+}
+/* ===== navbar css end ====== */
+/* ===== banner css start ==== */
+.container{
+    width : 80%;
+    margin    : 0 10%;
+    position   : relative;
+}
+.container h2{
+    font-size   : 49px;
+    font-weight : 400;
+    font-family : var(--poppins);
+    color       : #364547;
+    margin-top  : 128px;
+
+}
+.container h1{
+    font-size   : 70px;
+    font-weight : 700;
+    font-family : var(--poppins);
+    color       : #364547;
+}
+.container h1 span{
+    color  : #EF8D21;
+}
+.container p{
+    width          : 551px;
+    font-size      : 14px;
+    font-weight    : 400;
+    font-family    : var(--poppins);
+    line-height    : 25px;
+    letter-spacing : 3%;
+    color          : #364547;
+    margin-top     : 13px;
+    margin-bottom  : 27px;
+}
+.data{
+    width          : 607px;
+    padding        : 26px 0px;
+    background     : white;
+    border         : 1px solid #EDEDED;
+    border-radius  : 50px;
+    box-shadow     : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    z-index        : 999;
+}
+.data h6{
+    width         :130px;
+    height        :42px;
+    border-radius : 100px;
+    background    : transparent;
+    text-align    : center;
+    
+}
+.data h6 a{
+    font-size   : 15px;
+    font-weight : 400;
+    font-family : var(--poppins);
+    color       : #8F8F8F;
+    padding     : 11px 16px;
+    transition  : all linear .3s;
+}
+
+.data h6 a:hover{
+    width         :132px;
+    height        :44px;
+    border-radius : 100px;
+    background    : #fff;
+    border        : 2px solid black;
+    font-size     : 15px;
+    font-weight   : 700;
+    font-family   : var(--nunito);
+    color         : #000;
+    box-shadow    : 1px 2px 1px 2px #EF8D21;    
+}
+.data .line{
+    width      : 1px;
+    height     : 33px;
+    background :#9E9E9E;
+    
+}
+.image{
+    width    : 429px;
+    height   : 436px;
+    position : absolute;
+    top      : 350px;
+    right: 130px;
+    /* left     : 870px; */
+
+}
+.vector6{
+    position: absolute;
+    top: 0;
+    left:0 ;
+
+}
+.vector4{
+    position : absolute;
+    top      : 17px;
+    left     : 27px;
+}
+.orange{
+    position : absolute;
+    top      : 13px;
+    left     : 3px;
+}
+.cartoon{
+    position : absolute;
+    top      : -235px;
+    left     : 60px;
+}
+.leftLeaf{
+    width    : 243px;
+    height   : 313px;
+    position : absolute;
+    top      : 519px;
+    left     : 0;
+    z-index  : -1;
+}
+.rightLeaf{
+    width    : 263px;
+    height   : 343px;
+    position : absolute;
+    top      : 519px;
+    right: 0px;
+    /* left     : 1150px; */
+}
+.price{
+    width    : 175px;
+    height   : 138px;
+    position : absolute;
+    top      : 170px;
+    right: 108px;
+}
+.price h4{
+    font-size    : 20px;
+    font-weight  : 700;
+    font-family  : var(--poppins);
+    color        : #364547;
+}
+.price h2{
+    font-size   : 55px;
+    font-weight : 700;
+    font-family : var(--poppins);
+    color       : #EF8D21;
+}
+.circle1{
+    width         : 236px;
+    height        : 236px;
+    border        : 60px solid rgb(234, 232, 232);
+    border-radius : 100%;
+    position      : absolute;
+    top           : 223px;
+    left          : 42px;
+    z-index       : -1;
+}
+.circle2{
+    width         : 104px;
+    height        : 104px;
+    border        : 8px solid rgba(239, 141, 33, 0.2);
+    border-radius : 100%;
+    z-index       : -1;
+    position      : absolute;
+    top           : 130px;
+    right: 325px;
+    /* left          : 980px; */
+}
+/* ==== banner part end ==== */
